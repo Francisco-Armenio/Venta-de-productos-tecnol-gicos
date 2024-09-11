@@ -20,15 +20,18 @@
                 </div>
                     <div class="container-logo">
                         <i class="fa-solid fa-computer"></i>
-                        <h1 class="logo"><a href="">Tecnoligy</a></h1>
+                        <h1 class="logo"><a href="">Tecnoworld</a></h1>
                     </div>
 
                     <div class="container-user">
-                        <i class="fa-solid fa-circle-user"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="content-shopping-cart">
-                            <span class="text">carrito</span>
-                            <span class="number">(0)</span>
+                        <a href="./carrito/carrito.html">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="content-shopping-cart">
+                            <span class="text">Carrito</span>
+                            <span class="number" id="numerito"></span>
+                        </a>
+                        
                         </div>
                     </div>
                 </div>
@@ -39,15 +42,15 @@
             <nav class="navbar container">
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Computadora</a></li>
-                    <li><a href="">Celulares</a></li>
-                    <li><a href="">PlayStation</a></li>
-                    <li><a href="">Tablet</a></li>
+                    <li><a id="todo" class="boton-categoria">Inicio</a></li>
+                    <li><a id="computadora" class="boton-categoria">Computadoras</a></li>
+                    <li><a id="computadora" class="boton-categoria">Celulares</a></li>
+                    <li><a id="playStation" class="boton-categoria">PlayStation</a></li>
+                    <li><a id="tablet" class="boton-categoria">Tablet</a></li>
                 </ul>
 
                 <form class="search-form">
-                    <input type="search" placeholder="buscar...">
+                    <input type="search" placeholder="buscar..." id="buscador">
                     <button class="btn-search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>

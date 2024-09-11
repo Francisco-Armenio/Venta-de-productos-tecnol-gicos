@@ -18,8 +18,14 @@ html{
     font-size: 20px;
 }
 
-
+.filtro{
+    display: none;
+}
 /*navbar 1*/
+a {
+    text-decoration: none;
+    color: #023c41;
+}
 
 .container{
     max-width: 120rem;
