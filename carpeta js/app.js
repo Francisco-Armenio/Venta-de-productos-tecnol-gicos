@@ -20,7 +20,7 @@ const productos = [
         precio: 100
     },
     {
-        id: "hola",
+        id: "holaa",
         titulo: "si",
         imagen: "https://http2.mlstatic.com/D_NQ_NP_921195-MLA74420606310_022024-O.webp",
         categoria:{
@@ -30,7 +30,7 @@ const productos = [
         precio: 100
     },
     {
-        id: "hola",
+        id: "holaaa",
         titulo: "no",
         imagen: "https://http2.mlstatic.com/D_NQ_NP_921195-MLA74420606310_022024-O.webp",
         categoria:{
@@ -40,22 +40,22 @@ const productos = [
         precio: 100
     },
     {
-        id: "hola",
+        id: "holaaaa",
         titulo: "pepe",
         imagen: "https://http2.mlstatic.com/D_NQ_NP_921195-MLA74420606310_022024-O.webp",
         categoria:{
             nombre: "hola",
-            id: "hola"
+            id: "holaaaa"
         },
         precio: 100
     },
     {
-        id: "hola",
+        id: "holaaaaa",
         titulo: "papa",
         imagen: "https://http2.mlstatic.com/D_NQ_NP_921195-MLA74420606310_022024-O.webp",
         categoria:{
             nombre: "hola",
-            id: "hola"
+            id: "holaaaaa"
         },
         precio: 100
     },
@@ -221,7 +221,19 @@ function actualizarBotonesAgregar(){
     });
 }
 
-const productosEnCarrito = []
+let productosEnCarrito;
+
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
+
+
+if(productosEnCarritoLS){
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+    actualizarNumerito();   
+}else{
+    productosEnCarrito = [];
+}
+
+
 
 function agregarAlCarrito(e){
 
